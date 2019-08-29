@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+<group id="2">
+<collide comment="false" x="15" y="225">
+<group id="-1"/>
+</collide>
+</group>
+<group id="1">
+<step comment="false" x="15" y="95">
+<group id="-1">
+<if comment="false" x="26" y="120">
+<group id="-1">
+<die comment="false" x="37" y="158">
+<ACTOR eid="this" id="0"/>
+</die>
+</group>
+<not comment="false" id="0" x="0" y="0">
+<isonscreen comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</isonscreen>
+</not>
+</if>
+</group>
+</step>
+</group>
+<group id="3">
+<draw comment="false" x="15" y="298">
+<group id="-1"/>
+</draw>
+</group>
+<group id="0">
+<init comment="false" x="15" y="15">
+<group id="-1">
+<ignore-screen-tolerance comment="false" x="26" y="40">
+<ACTOR eid="this" id="0"/>
+</ignore-screen-tolerance>
+</group>
+</init>
+</group>
+<group id="-1"/>
+</groups>

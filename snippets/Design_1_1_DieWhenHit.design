@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <comment-long comment="false" x="26" y="45">
+                    <int id="0" val="See &amp;apos;Explode on Death&amp;apos; behavior to see the logic for HandleDeath."/>
+                </comment-long>
+                <shout comment="false" x="26" y="125">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="HandleDeath"/>
+                </shout>
+                <die comment="false" x="26" y="152">
+                    <ACTOR eid="lastcollided" id="0"/>
+                </die>
+                <die comment="false" x="26" y="179">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+            </group>
+        </collide>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
