@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="1" id="0">
+    <group eventID="4" id="0">
         <event-delay comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
+            <group eventID="4" id="-1">
                 <create-actor3 comment="false" x="26" y="42">
                     <actortype eid="25" id="0"/>
                     <int id="1" val="150"/>
                     <int id="2" val="260"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-            </group>
-            <int id="0" val="1"/>
-            <ACTOR eid="lastcreated" id="2"/>
-        </event-delay>
-    </group>
-    <group eventID="1" id="-1"/>
-    <group eventID="2" id="0">
-        <event-delay comment="false" x="15" y="15">
-            <group eventID="2" id="-1">
-                <create-actor3 comment="false" x="26" y="42">
+                <create-actor3 comment="false" x="26" y="69">
                     <actortype eid="27" id="0"/>
                     <int id="1" val="450"/>
                     <int id="2" val="260"/>
@@ -29,16 +20,5 @@
             <ACTOR eid="lastcreated" id="2"/>
         </event-delay>
     </group>
-    <group eventID="2" id="-1"/>
-    <group eventID="3" id="0">
-        <init comment="false" x="15" y="15">
-            <group eventID="3" id="-1">
-                <play-sound4 comment="false" x="26" y="40">
-                    <int id="0" val="1"/>
-                    <sound eid="29" id="1"/>
-                </play-sound4>
-            </group>
-        </init>
-    </group>
-    <group eventID="3" id="-1"/>
+    <group eventID="4" id="-1"/>
 </groups>

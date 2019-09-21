@@ -13,28 +13,136 @@
                                 <set-val-7-10 comment="false" x="48" y="133">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-7-10>
-                                <create-actor3 comment="false" x="48" y="158">
-                                    <actortype eid="var" id="0" vid="4"/>
-                                    <plus comment="false" id="1" x="0" y="0">
-                                        <get-xy comment="false" id="0" x="0" y="0">
-                                            <ACTOR eid="this" id="0"/>
-                                            <int id="1" val="2"/>
-                                        </get-xy>
-                                        <get-val-7-12 comment="false" id="1" x="0" y="0"/>
-                                    </plus>
-                                    <plus comment="false" id="2" x="0" y="0">
-                                        <get-xy comment="false" id="0" x="0" y="0">
-                                            <ACTOR eid="this" id="0"/>
-                                            <int id="1" val="3"/>
-                                        </get-xy>
-                                        <get-val-7-11 comment="false" id="1" x="0" y="0"/>
-                                    </plus>
-                                    <int id="3" val="2"/>
-                                </create-actor3>
-                                <set-val-7-9 comment="false" x="48" y="203">
+                                <if comment="false" x="48" y="158">
+                                    <group eventID="1" id="-1">
+                                        <create-actor3 comment="false" x="59" y="188">
+                                            <actortype eid="9" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <get-val-7-12 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                                <get-val-7-11 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </eq>
+                                </if>
+                                <else-if comment="false" x="48" y="245">
+                                    <group eventID="1" id="-1">
+                                        <create-actor3 comment="false" x="59" y="275">
+                                            <actortype eid="35" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <get-val-7-12 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                                <get-val-7-11 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="2"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="332">
+                                    <group eventID="1" id="-1">
+                                        <create-actor3 comment="false" x="59" y="362">
+                                            <actortype eid="37" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <get-val-7-12 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                                <get-val-7-11 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="3"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="419">
+                                    <group eventID="1" id="-1">
+                                        <create-actor3 comment="false" x="59" y="449">
+                                            <actortype eid="33" id="0"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <get-val-7-12 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                                <get-val-7-11 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="2"/>
+                                        </create-actor3>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="4"/>
+                                    </eq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="506">
+                                    <group eventID="1" id="-1">
+                                        <set-game-val-3 comment="false" x="59" y="536">
+                                            <int id="0" val="1"/>
+                                        </set-game-val-3>
+                                    </group>
+                                    <lesseq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </lesseq>
+                                </else-if>
+                                <else-if comment="false" x="48" y="568">
+                                    <group eventID="1" id="-1">
+                                        <set-game-val-3 comment="false" x="59" y="598">
+                                            <int id="0" val="4"/>
+                                        </set-game-val-3>
+                                    </group>
+                                    <moreeq comment="false" id="0" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="5"/>
+                                    </moreeq>
+                                </else-if>
+                                <set-val-7-9 comment="false" x="48" y="630">
                                     <ACTOR eid="lastcreated" id="0"/>
                                 </set-val-7-9>
-                                <set-xy comment="false" x="48" y="230">
+                                <set-xy comment="false" x="48" y="657">
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <int id="1" val="0"/>
                                     <minus comment="false" id="2" x="0" y="0">
@@ -51,7 +159,7 @@
                                         </div>
                                     </minus>
                                 </set-xy>
-                                <set-xy comment="false" x="48" y="280">
+                                <set-xy comment="false" x="48" y="707">
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <int id="1" val="1"/>
                                     <minus comment="false" id="2" x="0" y="0">
@@ -68,7 +176,7 @@
                                         </div>
                                     </minus>
                                 </set-xy>
-                                <setangle comment="false" x="48" y="330">
+                                <setangle comment="false" x="48" y="757">
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <minus comment="false" id="1" x="0" y="0">
                                         <plus comment="false" id="0" x="0" y="0">
@@ -80,7 +188,7 @@
                                         <get-val-7-6 comment="false" id="1" x="0" y="0"/>
                                     </minus>
                                 </setangle>
-                                <setvel comment="false" x="48" y="380">
+                                <setvel comment="false" x="48" y="807">
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <minus comment="false" id="1" x="0" y="0">
                                         <plus comment="false" id="0" x="0" y="0">
@@ -93,7 +201,7 @@
                                     </minus>
                                     <get-val-7-2 comment="false" id="2" x="0" y="0"/>
                                 </setvel>
-                                <play-sound4 comment="false" x="48" y="430">
+                                <play-sound4 comment="false" x="48" y="857">
                                     <int id="0" val="0"/>
                                     <sound eid="var" id="1" vid="7"/>
                                 </play-sound4>
@@ -107,15 +215,15 @@
                     </group>
                     <get-val-7-10 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="26" y="481">
+                <else comment="false" x="26" y="908">
                     <group eventID="-1" id="-1">
-                        <set-val-7-8 comment="false" x="37" y="501">
+                        <set-val-7-8 comment="false" x="37" y="928">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-7-8>
-                        <set-val-7-10 comment="false" x="37" y="526">
+                        <set-val-7-10 comment="false" x="37" y="953">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-7-10>
-                        <create-actor3 comment="false" x="37" y="551">
+                        <create-actor3 comment="false" x="37" y="978">
                             <actortype eid="var" id="0" vid="4"/>
                             <get-xy comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
@@ -127,10 +235,10 @@
                             </get-xy>
                             <int id="3" val="1"/>
                         </create-actor3>
-                        <set-val-7-9 comment="false" x="37" y="591">
+                        <set-val-7-9 comment="false" x="37" y="1018">
                             <ACTOR eid="lastcreated" id="0"/>
                         </set-val-7-9>
-                        <set-xy comment="false" x="37" y="618">
+                        <set-xy comment="false" x="37" y="1045">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="0"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -147,7 +255,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <set-xy comment="false" x="37" y="668">
+                        <set-xy comment="false" x="37" y="1095">
                             <ACTOR eid="lastcreated" id="0"/>
                             <int id="1" val="1"/>
                             <minus comment="false" id="2" x="0" y="0">
@@ -164,7 +272,7 @@
                                 </div>
                             </minus>
                         </set-xy>
-                        <setangle comment="false" x="37" y="718">
+                        <setangle comment="false" x="37" y="1145">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -176,7 +284,7 @@
                                 <get-val-7-6 comment="false" id="1" x="0" y="0"/>
                             </minus>
                         </setangle>
-                        <setvel comment="false" x="37" y="768">
+                        <setvel comment="false" x="37" y="1195">
                             <ACTOR eid="lastcreated" id="0"/>
                             <minus comment="false" id="1" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
@@ -189,7 +297,7 @@
                             </minus>
                             <get-val-7-2 comment="false" id="2" x="0" y="0"/>
                         </setvel>
-                        <play-sound4 comment="false" x="37" y="818">
+                        <play-sound4 comment="false" x="37" y="1245">
                             <int id="0" val="0"/>
                             <sound eid="var" id="1" vid="7"/>
                         </play-sound4>

@@ -75,6 +75,21 @@ class Design_8_8_DieWhenOffScreen extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		actor.makeAlwaysSimulate();
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(!(actor.isOnScreen()))
+				{
+					recycleActor(actor);
+				}
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

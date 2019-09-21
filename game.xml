@@ -83,6 +83,7 @@
     </attcats>
     <props/>
     <attributes>
+        <number cid="-1" id="3" name="BulletNo" save="true" value="1"/>
         <boolean cid="-1" id="2" name="Slide and Increase Speed" save="true" value="false"/>
         <boolean cid="-1" id="0" name="Move Right" save="true" value="true"/>
     </attributes>
@@ -111,7 +112,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="1,3,5,7,9,11,13,15,16,17,18,21,22,25,27,29,30,31," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="1,3,5,7,9,11,13,15,16,17,18,21,22,25,27,32,33,35,37," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

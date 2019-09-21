@@ -83,7 +83,30 @@ class Design_7_7_FireBullet extends ActorScript
 			{
 				_CanFire = false;
 				_Fired = true;
-				createRecycledActor(bullet, (actor.getXCenter() + _XOffset), (actor.getYCenter() + _YOffset), Script.BACK);
+				if(((Engine.engine.getGameAttribute("BulletNo") : Float) == 1))
+				{
+					createRecycledActor(getActorType(9), (actor.getXCenter() + _XOffset), (actor.getYCenter() + _YOffset), Script.BACK);
+				}
+				else if(((Engine.engine.getGameAttribute("BulletNo") : Float) == 2))
+				{
+					createRecycledActor(getActorType(35), (actor.getXCenter() + _XOffset), (actor.getYCenter() + _YOffset), Script.BACK);
+				}
+				else if(((Engine.engine.getGameAttribute("BulletNo") : Float) == 3))
+				{
+					createRecycledActor(getActorType(37), (actor.getXCenter() + _XOffset), (actor.getYCenter() + _YOffset), Script.BACK);
+				}
+				else if(((Engine.engine.getGameAttribute("BulletNo") : Float) == 4))
+				{
+					createRecycledActor(getActorType(33), (actor.getXCenter() + _XOffset), (actor.getYCenter() + _YOffset), Script.BACK);
+				}
+				else if(((Engine.engine.getGameAttribute("BulletNo") : Float) <= 0))
+				{
+					Engine.engine.setGameAttribute("BulletNo", 1);
+				}
+				else if(((Engine.engine.getGameAttribute("BulletNo") : Float) >= 5))
+				{
+					Engine.engine.setGameAttribute("BulletNo", 4);
+				}
 				_BulletCreated = getLastCreatedActor();
 				getLastCreatedActor().setX((getLastCreatedActor().getX() - ((getLastCreatedActor().getWidth()) / 2)));
 				getLastCreatedActor().setY((getLastCreatedActor().getY() - ((getLastCreatedActor().getHeight()) / 2)));
