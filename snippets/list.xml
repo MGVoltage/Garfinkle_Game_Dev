@@ -122,6 +122,7 @@
         <blocks/>
         <events>
             <event displayName="After N secs" enabled="true" id="4" name="event-delay" order="5" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="5" name="event-delay" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="25" attachedevent="true" class="scripts.ActorEvents_25" classname="scripts.ActorEvents_25" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="19" name="ActorEvents_25" oid="-1" package="scripts." shared="false" type="actor">
@@ -192,5 +193,9 @@
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
         </events>
+    </snippet>
+    <snippet actorid="41" attachedevent="true" class="scripts.ActorEvents_41" classname="scripts.ActorEvents_41" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="29" name="ActorEvents_41" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>

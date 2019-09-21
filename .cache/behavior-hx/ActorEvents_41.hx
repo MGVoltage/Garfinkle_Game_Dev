@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,48 +61,18 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_2 extends SceneScript
+class ActorEvents_41 extends ActorScript
 {
-	public var _time:Actor;
-	public var _Time:Float;
-	public var _startTitle:Bool;
-	public var _StartButtons:Bool;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("time", "_time");
-		nameMap.set("Time", "_Time");
-		_Time = 0;
-		nameMap.set("startTitle", "_startTitle");
-		_startTitle = false;
-		nameMap.set("StartButtons", "_StartButtons");
-		_StartButtons = false;
+		super(actor);
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* ======================= After N seconds ======================== */
-		runLater(1000 * 2, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				createRecycledActor(getActorType(25), 100, 260, Script.FRONT);
-				createRecycledActor(getActorType(27), 450, 260, Script.FRONT);
-			}
-		}, null);
-		
-		/* ======================= After N seconds ======================== */
-		runLater(1000 * 1, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				createRecycledActor(getActorType(41), 170, 50, Script.FRONT);
-			}
-		}, null);
 		
 	}
 	
