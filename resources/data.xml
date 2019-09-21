@@ -24,7 +24,7 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="8" name="Alien Cruiser" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,8,8,53,8,53,53,8,53" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="27" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Grabber" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
@@ -74,12 +74,12 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="4" name="Alien Saucer" readable="false" shared="false">
         <anim across="2" down="1" durations="400,400" height="64" id="0" loop="true" name="Animation 0" numframes="2" originx="32" originy="32" sync="false" version="2" width="128">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,5,9,57,9,57,47,5,47" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="6" name="Alien Triangle" readable="false" shared="false">
         <anim across="2" down="1" durations="130,300" height="64" id="0" loop="true" name="Animation 0" numframes="2" originx="32" originy="32" sync="false" version="2" width="128">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,8,12,54,12,54,52,8,52" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="26" fixedrot="true" fric="0.2" gid="4" id="39" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Boss" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="40" static="false">
@@ -120,6 +120,21 @@
     <music atlasID="0" desc="" id="16" loop="true" name="Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="24" fixedrot="false" fric="0.2" gid="5" id="37" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Large shot" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="38" static="false">
         <snippets>
+            <s enabled="false" id="7">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val="37"/>
+                <prop id="5" list="0" val="-1"/>
+                <prop id="6" list="0" val="-1"/>
+                <prop id="7" list="0" val="No Sound"/>
+                <prop id="8" list="0" val="true"/>
+                <prop id="9" list="0" val=""/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="12" list="0" val="0.0"/>
+            </s>
             <s enabled="true" id="8">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -161,6 +176,21 @@
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="22" fixedrot="true" fric="0.2" gid="5" id="33" ignoreg="true" inertia="1.0" ldamp="0.0" mass="10.0" name="Pierce Shot" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="34" static="false">
         <snippets>
+            <s enabled="false" id="7">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val="33"/>
+                <prop id="5" list="0" val="-1"/>
+                <prop id="6" list="0" val="-1"/>
+                <prop id="7" list="0" val="No Sound"/>
+                <prop id="8" list="0" val="true"/>
+                <prop id="9" list="0" val=""/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="12" list="0" val="0.0"/>
+            </s>
             <s enabled="true" id="8">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -210,7 +240,7 @@
                 <prop id="7" list="0" val="left"/>
                 <prop id="8" list="0" val="right"/>
                 <prop id="9" list="0" val="3"/>
-                <prop id="11" list="0" val="8"/>
+                <prop id="11" list="0" val="10"/>
                 <prop id="12" list="0" val="0"/>
             </s>
             <s enabled="true" id="10">
@@ -220,7 +250,7 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="2" name="Player Tank" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="179" id="0" loop="true" name="Animation 0" numframes="1" originx="111" originy="89" sync="false" version="2" width="222">
-            <poly data="4,73,23,148,23,148,87,73,87" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,66,0,154,0,154,64,66,64" density="0.1" fric="0.2" gid="0" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="20" fixedrot="false" fric="0.2" gid="3" id="27" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Quit Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="28" static="false">
@@ -233,6 +263,21 @@
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="11" fixedrot="true" fric="0.2" gid="5" id="9" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Regular shot" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="10" static="false">
         <snippets>
+            <s enabled="false" id="7">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="6"/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val="9"/>
+                <prop id="5" list="0" val="-1"/>
+                <prop id="6" list="0" val="-1"/>
+                <prop id="7" list="0" val="No Sound"/>
+                <prop id="8" list="0" val="true"/>
+                <prop id="9" list="0" val=""/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="12" list="0" val="0.0"/>
+            </s>
             <s enabled="true" id="8">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -240,11 +285,26 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="10" name="Regular shot" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="23" id="0" loop="true" name="Animation 0" numframes="1" originx="8" originy="11" sync="false" version="2" width="17">
-            <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,14,0,14,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="23" fixedrot="false" fric="0.2" gid="5" id="35" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Small shot" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="36" static="false">
         <snippets>
+            <s enabled="false" id="7">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="300"/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val="35"/>
+                <prop id="5" list="0" val="-1"/>
+                <prop id="6" list="0" val="-1"/>
+                <prop id="7" list="0" val="-1"/>
+                <prop id="8" list="0" val="true"/>
+                <prop id="9" list="0" val=""/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="12" list="0" val="0.0"/>
+            </s>
             <s enabled="true" id="8">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -252,7 +312,7 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="36" name="Small shot" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="23" id="0" loop="true" name="Animation 0" numframes="1" originx="8" originy="11" sync="false" version="2" width="17">
-            <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,4,3,12,3,12,17,4,17" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="25" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Start Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="26" static="false">

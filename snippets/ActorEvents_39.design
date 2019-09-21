@@ -189,8 +189,61 @@
                 </scene-reload-new>
             </group>
             <ACTOR eid="this" id="0"/>
-            <actorgroup eid="3" id="1"/>
+            <actorgroup eid="0" id="1"/>
         </event-collide-actortogroup>
     </group>
     <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="7" id="-1">
+                        <scene-reload-new comment="false" x="37" y="88">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0.3"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0.3"/>
+                        </scene-reload-new>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <moreeq comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <scene-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </scene-wh>
+                                <int id="1" val="159"/>
+                            </minus>
+                        </moreeq>
+                        <and comment="false" id="1" x="0" y="0">
+                            <lesseq comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <plus comment="false" id="1" x="0" y="0">
+                                    <get-game-val-8 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="44"/>
+                                </plus>
+                            </lesseq>
+                            <moreeq comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <get-game-val-8 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="44"/>
+                                </minus>
+                            </moreeq>
+                        </and>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="7" id="-1"/>
 </groups>

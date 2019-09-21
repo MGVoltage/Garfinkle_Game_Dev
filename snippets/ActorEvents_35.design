@@ -1,48 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <collide comment="false" x="15" y="15">
+        <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <comment-long comment="false" x="26" y="45">
-                    <int id="0" val="See &amp;apos;Explode on Death&amp;apos; behavior to see the logic for HandleDeath."/>
-                </comment-long>
-                <shout comment="false" x="26" y="125">
-                    <ACTOR eid="lastcollided" id="0"/>
-                    <int id="1" val="HandleDeath"/>
-                </shout>
-                <die comment="false" x="26" y="152">
-                    <ACTOR eid="lastcollided" id="0"/>
-                </die>
-                <die comment="false" x="26" y="179">
+                <setvel comment="false" x="26" y="40">
                     <ACTOR eid="this" id="0"/>
-                </die>
-                <set-game-val-4 comment="false" x="26" y="206">
-                    <minus comment="false" id="0" x="0" y="0">
-                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1"/>
-                    </minus>
-                </set-game-val-4>
+                    <int id="1" val="90"/>
+                    <int id="2" val="600"/>
+                </setvel>
             </group>
-        </collide>
-    </group>
-    <group eventID="1" id="1">
-        <if comment="false" x="178" y="344">
-            <group eventID="1" id="-1">
-                <dolater comment="false" x="189" y="374">
-                    <group eventID="1" id="-1">
-                        <set-game-val-4 comment="false" x="200" y="401">
-                            <int id="0" val="50"/>
-                        </set-game-val-4>
-                    </group>
-                    <int id="0" val="1.5"/>
-                    <ACTOR eid="this" id="2"/>
-                </dolater>
-            </group>
-            <eq comment="false" id="0" x="0" y="0">
-                <get-game-val-4 comment="false" id="0" x="0" y="0"/>
-                <int id="1" val="0"/>
-            </eq>
-        </if>
+        </init>
     </group>
     <group eventID="1" id="-1"/>
 </groups>

@@ -85,14 +85,16 @@
     </snippet>
     <snippet actorid="9" attachedevent="true" class="scripts.ActorEvents_9" classname="scripts.ActorEvents_9" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="11" name="ActorEvents_9" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events>
-            <event displayName="Actor - Any" enabled="true" id="1" name="collide" order="1" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet actorid="7" attachedevent="true" class="scripts.ActorEvents_7" classname="scripts.ActorEvents_7" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="12" name="ActorEvents_7" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="2" name="event-collide-actortotype" order="2" repeats="true"/>
+            <event displayName="Actor - Type Copy" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
+            <event displayName="Actor - Type Copy Copy" enabled="true" id="4" name="event-collide-actortotype" order="4" repeats="false"/>
+            <event displayName="Actor - Type Copy Copy Copy" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="13" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
@@ -102,16 +104,21 @@
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="17" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Slid and Increased for Self" hidden="true" id="1" name="_SlidandIncreasedforSelf" order="0"/>
+        <number default="2.0" defaultValue="2.0" desc="" dropdown="" fullname="Movement Speed" hidden="false" id="2" name="_MovementSpeed" order="1"/>
         <blocks/>
         <events>
             <event displayName="Keyboard" enabled="true" id="1" name="event-key-press-release" order="1" repeats="true"/>
             <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="false"/>
-            <event displayName="Type - Type" enabled="true" id="4" name="event-collide-typetotype" order="4" repeats="true"/>
-            <event displayName="Type - Type Copy" enabled="true" id="5" name="event-collide-typetotype" order="8" repeats="true"/>
-            <event displayName="Type - Type Copy Copy" enabled="true" id="6" name="event-collide-typetotype" order="9" repeats="true"/>
-            <event displayName="Type - Type Copy Copy Copy" enabled="true" id="7" name="event-collide-typetotype" order="10" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="8" name="step" order="6" repeats="true"/>
-            <event displayName="Created" enabled="true" id="9" name="init" order="5" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="4" name="event-collide-typetotype" order="5" repeats="true"/>
+            <event displayName="Type - Type Copy" enabled="true" id="5" name="event-collide-typetotype" order="15" repeats="true"/>
+            <event displayName="Type - Type Copy Copy" enabled="true" id="6" name="event-collide-typetotype" order="16" repeats="true"/>
+            <event displayName="Type - Type Copy Copy Copy" enabled="true" id="7" name="event-collide-typetotype" order="17" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="8" name="step" order="12" repeats="true"/>
+            <event displayName="Created" enabled="true" id="9" name="init" order="10" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="10" name="event-collide-typetotype" order="7" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="11" name="event-collide-actortotype" order="13" repeats="false"/>
+            <event displayName="Updating" enabled="true" id="12" name="step" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_2" classname="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="18" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" shared="false" type="scene">
@@ -147,21 +154,19 @@
     </snippet>
     <snippet actorid="33" attachedevent="true" class="scripts.ActorEvents_33" classname="scripts.ActorEvents_33" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="22" name="ActorEvents_33" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events>
-            <event displayName="Actor - Any" enabled="true" id="1" name="collide" order="1" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet actorid="35" attachedevent="true" class="scripts.ActorEvents_35" classname="scripts.ActorEvents_35" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="23" name="ActorEvents_35" oid="-1" package="scripts." shared="false" type="actor">
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="X Offset" hidden="false" id="1" name="_XOffset" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Y Offset" hidden="false" id="2" name="_YOffset" order="1"/>
         <blocks/>
         <events>
-            <event displayName="Actor - Any" enabled="true" id="1" name="collide" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="37" attachedevent="true" class="scripts.ActorEvents_37" classname="scripts.ActorEvents_37" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="24" name="ActorEvents_37" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events>
-            <event displayName="Actor - Any" enabled="true" id="1" name="collide" order="1" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_25_25_BulletShift" classname="scripts.Design_25_25_BulletShift" desc="" description="" design="true" drawOrder="0" id="25" name="BulletShift" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
@@ -176,22 +181,31 @@
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Slid and Increased for Self" hidden="true" id="2" name="_SlidandIncreasedforSelf" order="1"/>
         <blocks/>
         <events>
-            <event displayName="Updating" enabled="true" id="3" name="step" order="5" repeats="false"/>
+            <event displayName="Updating" enabled="true" id="3" name="step" order="6" repeats="false"/>
             <event displayName="Actor - Type" enabled="true" id="4" name="event-collide-actortotype" order="3" repeats="true"/>
-            <event displayName="Every N secs" enabled="true" id="5" name="event-periodic" order="6" repeats="true"/>
-            <event displayName="Actor - Group" enabled="true" id="6" name="event-collide-actortogroup" order="4" repeats="true"/>
+            <event displayName="Every N secs" enabled="true" id="5" name="event-periodic" order="7" repeats="true"/>
+            <event displayName="Actor - Group" enabled="true" id="6" name="event-collide-actortogroup" order="5" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="7" name="step" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="5" attachedevent="true" class="scripts.ActorEvents_5" classname="scripts.ActorEvents_5" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="27" name="ActorEvents_5" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="2" name="event-collide-actortotype" order="2" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="4" name="event-collide-actortotype" order="4" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="28" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="2" name="event-collide-actortotype" order="2" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="4" name="event-collide-actortotype" order="4" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="41" attachedevent="true" class="scripts.ActorEvents_41" classname="scripts.ActorEvents_41" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="29" name="ActorEvents_41" oid="-1" package="scripts." shared="false" type="actor">

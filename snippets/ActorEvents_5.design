@@ -25,4 +25,101 @@
         </step>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <shout comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="HandleDeath"/>
+                </shout>
+                <die comment="false" x="26" y="74">
+                    <ACTOR eid="lastcollided" id="0"/>
+                </die>
+                <die comment="false" x="26" y="101">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+                <set-game-val-4 comment="false" x="26" y="128">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-game-val-4>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actortype eid="37" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <shout comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="HandleDeath"/>
+                </shout>
+                <die comment="false" x="26" y="74">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+                <set-game-val-4 comment="false" x="26" y="101">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-game-val-4>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actortype eid="33" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-collide-actortotype comment="false" x="15" y="16">
+            <group eventID="4" id="-1">
+                <shout comment="false" x="26" y="48">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="HandleDeath"/>
+                </shout>
+                <die comment="false" x="26" y="75">
+                    <ACTOR eid="lastcollided" id="0"/>
+                </die>
+                <die comment="false" x="26" y="102">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+                <set-game-val-4 comment="false" x="26" y="129">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-game-val-4>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actortype eid="9" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <shout comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="HandleDeath"/>
+                </shout>
+                <die comment="false" x="26" y="74">
+                    <ACTOR eid="lastcollided" id="0"/>
+                </die>
+                <die comment="false" x="26" y="101">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+                <set-game-val-4 comment="false" x="26" y="128">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-game-val-4>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actortype eid="35" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>
