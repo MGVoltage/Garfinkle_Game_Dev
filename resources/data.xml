@@ -24,7 +24,7 @@
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Grabber" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="27" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Grabber" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
         <snippets>
             <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -43,7 +43,7 @@
             </s>
         </snippets>
     </actor>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Saucer" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="28" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Saucer" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
         <snippets>
             <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -73,11 +73,27 @@
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="26" fixedrot="false" fric="0.2" gid="4" id="39" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Boss" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="40" static="false">
+        <snippets>
+            <s enabled="false" id="0">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="2"/>
+                <prop id="3" list="0" val="false"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="40" name="Boss" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="175" id="0" loop="true" name="Animation 0" numframes="1" originx="112" originy="87" sync="false" version="2" width="225">
+            <poly data="4,0,0,225,0,225,175,0,175" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="1" durations="100,100" height="175" id="1" loop="true" name="Warning" numframes="2" originx="112" originy="87" sync="false" version="2" width="450">
+            <poly data="4,0,0,225,0,225,175,0,175" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="175" id="2" loop="true" name="REEEEEEEE" numframes="1" originx="112" originy="87" sync="false" version="2" width="225">
+            <poly data="4,0,0,225,0,225,175,0,175" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="18" name="Desert Background" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
-    <tileset across="1" atlasID="0" desc="" down="2" id="17" name="Desert Ground" oid="-1" readable="false" shared="false" th="32" tw="32">
-        <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
-        <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>
-    </tileset>
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="16" loop="true" name="Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="24" fixedrot="false" fric="0.2" gid="5" id="37" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Large shot" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="38" static="false">
@@ -113,7 +129,7 @@
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="14" name="Particle Bigger" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="10" id="0" loop="true" name="Animation 0" numframes="1" originx="6" originy="5" sync="false" version="1" width="13"/>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="22" fixedrot="false" fric="0.2" gid="5" id="33" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Pierce Shot" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="34" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="22" fixedrot="true" fric="0.2" gid="5" id="33" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Pierce Shot" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="34" static="false">
         <snippets>
             <s enabled="true" id="8">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -127,6 +143,16 @@
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="13" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
         <snippets>
+            <s enabled="true" id="2">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="10.0"/>
+                <prop id="2" list="0" val="1"/>
+                <prop id="3" list="0" val="11"/>
+                <prop id="5" list="0" val="5"/>
+                <prop id="6" list="0" val="13"/>
+                <prop id="7" list="0" val="0.7"/>
+                <prop id="8" list="0" val="15"/>
+            </s>
             <s enabled="true" id="5">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="fire"/>

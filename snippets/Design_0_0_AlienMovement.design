@@ -163,13 +163,13 @@
         </step>
     </group>
     <group eventID="1" id="-1">
-        <eq comment="false" x="453" y="626">
-            <int id="0" val=""/>
-            <int id="1" val=""/>
-        </eq>
         <eq comment="false" x="701" y="532">
             <int id="0" val=""/>
             <int id="1" val="2"/>
+        </eq>
+        <eq comment="false" x="453" y="626">
+            <int id="0" val=""/>
+            <int id="1" val=""/>
         </eq>
     </group>
 </groups>

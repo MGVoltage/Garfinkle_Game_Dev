@@ -40,8 +40,6 @@
         <actor a="0.0" aid="32" c="false" group="4" id="5" name="Alien Grabber 32" order="26" sx="1.0" sy="1.0" x="512" y="224" z="0"/>
     </actors>
     <snippets/>
-    <terrain>
-        <p pts="4,0.0,32.0,0.0,0.0,640.0,0.0,640.0,32.0" x="0.0" y="448.0"/>
-    </terrain>
+    <terrain/>
     <atlases members="" retainAtlases="true"/>
 </scene>
