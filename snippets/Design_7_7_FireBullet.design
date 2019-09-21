@@ -363,7 +363,7 @@
         </receive-message>
     </group>
     <group eventID="1" id="-1">
-        <plus comment="false" x="48" y="48">
+        <plus comment="false" x="346" y="27">
             <getdir comment="false" id="0" x="0" y="0">
                 <ACTOR eid="this" id="0"/>
             </getdir>
