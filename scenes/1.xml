@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="3" desc="" eventsnippetid="-1" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="1" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+<scene depth="3" desc="" eventsnippetid="17" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="1" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
-        <background blendMode="normal" customScrollFactor="false" id="3" locked="true" name="Desert Background" opacity="100" order="3" rid="18" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <background blendMode="normal" customScrollFactor="false" id="4" locked="true" name="Orbit BG" opacity="100" order="3" rid="21" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="normal" color="0,255,0" id="2" locked="false" name="Layer 2" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="false"/>
-        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="false"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="normal" color="0,0,255" id="1" locked="false" name="Layer 1" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="false"/>
     </layers>
     <joints/>
