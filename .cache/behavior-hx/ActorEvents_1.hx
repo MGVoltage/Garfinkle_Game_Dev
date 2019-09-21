@@ -61,7 +61,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_25 extends ActorScript
+class ActorEvents_1 extends ActorScript
 {
 	
 	
@@ -74,30 +74,13 @@ class ActorEvents_25 extends ActorScript
 	override public function init()
 	{
 		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && 1 == mouseState)
+			if(wrapper.enabled && sameAsAny(getActorType(1), event.otherActor.getType(),event.otherActor.getGroup()))
 			{
-				actor.growTo(130/100, 130/100, 0, Easing.linear);
-			}
-		});
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && -1 == mouseState)
-			{
-				actor.growTo(100/100, 100/100, 0, Easing.linear);
-			}
-		});
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && 3 == mouseState)
-			{
-				switchScene(GameModel.get().scenes.get(1).getID(), null, createSlideUpTransition(0.5));
+				recycleActor(event.thisActor);
+				reloadCurrentScene(createFadeOut(0.3), createFadeIn(0.3));
 			}
 		});
 		

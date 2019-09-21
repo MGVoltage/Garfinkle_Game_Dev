@@ -1,85 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="1" id="0">
-        <event-collide-actortogroup comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
-                <scene-reload-new comment="false" x="26" y="47">
-                    <int id="0" val="0"/>
-                    <int id="1" val="0.3"/>
-                    <int id="2" val="0"/>
-                    <int id="3" val="0.3"/>
-                </scene-reload-new>
-            </group>
-            <ACTOR eid="this" id="0"/>
-            <actorgroup eid="0" id="1"/>
-        </event-collide-actortogroup>
-    </group>
-    <group eventID="1" id="-1"/>
-    <group eventID="2" id="0">
-        <event-periodic comment="false" x="15" y="15">
-            <group eventID="2" id="-1">
-                <set-dxy comment="false" x="26" y="42">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="0"/>
-                </set-dxy>
-                <setanim comment="false" x="26" y="69">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="Warning"/>
-                </setanim>
-                <dolater comment="false" x="26" y="96">
-                    <group eventID="2" id="-1">
-                        <setanim comment="false" x="37" y="123">
-                            <ACTOR eid="this" id="0"/>
-                            <int id="1" val="REEEEEEEE"/>
-                        </setanim>
-                        <moveToBy comment="false" x="37" y="150">
-                            <ACTOR eid="this" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="0"/>
-                            <int id="3" val="430"/>
-                            <int id="4" val="1.5"/>
-                            <int id="5" val="0"/>
-                        </moveToBy>
-                        <dolater comment="false" x="37" y="177">
-                            <group eventID="2" id="-1">
-                                <moveToBy comment="false" x="48" y="204">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="0"/>
-                                    <int id="2" val="0"/>
-                                    <int id="3" val="-430"/>
-                                    <int id="4" val="1.5"/>
-                                    <int id="5" val="0"/>
-                                </moveToBy>
-                                <setanim comment="false" x="48" y="231">
-                                    <ACTOR eid="this" id="0"/>
-                                    <int id="1" val="Animation 0"/>
-                                </setanim>
-                                <dolater comment="false" x="48" y="258">
-                                    <group eventID="2" id="-1">
-                                        <set-dxy comment="false" x="59" y="285">
-                                            <ACTOR eid="this" id="0"/>
-                                            <int id="1" val="0"/>
-                                            <get-val-26-1 comment="false" id="2" x="0" y="0"/>
-                                        </set-dxy>
-                                    </group>
-                                    <int id="0" val="0.5"/>
-                                    <ACTOR eid="this" id="2"/>
-                                </dolater>
-                            </group>
-                            <int id="0" val="1.5"/>
-                            <ACTOR eid="this" id="2"/>
-                        </dolater>
-                    </group>
-                    <int id="0" val="2"/>
-                    <ACTOR eid="this" id="2"/>
-                </dolater>
-            </group>
-            <int id="0" val="8"/>
-            <ACTOR eid="this" id="2"/>
-        </event-periodic>
-    </group>
-    <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="3" id="-1">
@@ -154,19 +74,17 @@
                         <set-dxy comment="false" x="37" y="589">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <get-val-26-1 comment="false" id="2" x="0" y="0"/>
+                            <int id="2" val="3"/>
                         </set-dxy>
                     </group>
                     <get-game-val-0 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <else comment="false" x="26" y="633">
+                <else comment="false" x="26" y="628">
                     <group eventID="3" id="-1">
-                        <set-dxy comment="false" x="37" y="653">
+                        <set-dxy comment="false" x="37" y="648">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <neg comment="false" id="2" x="0" y="0">
-                                <get-val-26-1 comment="false" id="0" x="0" y="0"/>
-                            </neg>
+                            <int id="2" val="-3"/>
                         </set-dxy>
                     </group>
                 </else>
@@ -174,4 +92,105 @@
         </step>
     </group>
     <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <die comment="false" x="26" y="47">
+                    <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                </die>
+                <scene-reload-new comment="false" x="26" y="79">
+                    <int id="0" val="0"/>
+                    <int id="1" val="0.3"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0.3"/>
+                </scene-reload-new>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actortype eid="1" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-dxy comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                </set-dxy>
+                <setanim comment="false" x="26" y="69">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Warning"/>
+                </setanim>
+                <dolater comment="false" x="26" y="96">
+                    <group eventID="2" id="-1">
+                        <setanim comment="false" x="37" y="123">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Attack"/>
+                        </setanim>
+                        <moveToBy comment="false" x="37" y="150">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="400"/>
+                            <int id="4" val="1.5"/>
+                            <int id="5" val="10"/>
+                        </moveToBy>
+                        <dolater comment="false" x="37" y="177">
+                            <group eventID="2" id="-1">
+                                <moveToBy comment="false" x="48" y="204">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                    <int id="3" val="-400"/>
+                                    <int id="4" val="1.5"/>
+                                    <int id="5" val="12"/>
+                                </moveToBy>
+                                <setanim comment="false" x="48" y="231">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Boss"/>
+                                </setanim>
+                                <dolater comment="false" x="48" y="258">
+                                    <group eventID="2" id="-1">
+                                        <set-dxy comment="false" x="59" y="285">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="3"/>
+                                        </set-dxy>
+                                    </group>
+                                    <int id="0" val="0.5"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <int id="0" val="2"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                    </group>
+                    <int id="0" val="2"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="8"/>
+            <ACTOR eid="this" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <die comment="false" x="26" y="47">
+                    <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                </die>
+                <scene-reload-new comment="false" x="26" y="79">
+                    <int id="0" val="0"/>
+                    <int id="1" val="0.3"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0.3"/>
+                </scene-reload-new>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actorgroup eid="3" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="6" id="-1"/>
 </groups>

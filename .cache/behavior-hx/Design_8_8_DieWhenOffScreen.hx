@@ -61,43 +61,32 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_25 extends ActorScript
+class Design_8_8_DieWhenOffScreen extends ActorScript
 {
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Actor", "actor");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && 1 == mouseState)
-			{
-				actor.growTo(130/100, 130/100, 0, Easing.linear);
-			}
-		});
+		/* ======================== When Creating ========================= */
+		actor.makeAlwaysSimulate();
 		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && -1 == mouseState)
+			if(wrapper.enabled)
 			{
-				actor.growTo(100/100, 100/100, 0, Easing.linear);
-			}
-		});
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && 3 == mouseState)
-			{
-				switchScene(GameModel.get().scenes.get(1).getID(), null, createSlideUpTransition(0.5));
+				if(!(actor.isOnScreen()))
+				{
+					recycleActor(actor);
+				}
 			}
 		});
 		

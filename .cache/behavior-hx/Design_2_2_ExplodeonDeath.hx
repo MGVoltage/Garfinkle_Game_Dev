@@ -61,45 +61,54 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_25 extends ActorScript
+class Design_2_2_ExplodeonDeath extends ActorScript
 {
+	public var _NumberofActorstoCreate:Float;
+	public var _ExplosionForce:Float;
+	public var _ActortoCreate:ActorType;
+	public var _NumberofSecondActorstoCreate:Float;
+	public var _SecondActortoCreate:ActorType;
+	public var _ExplosionForceofSecondActors:Float;
+	public var _SoundtoPlay:Sound;
+	public function _customEvent_HandleDeath():Void
+	{
+		playSound(_SoundtoPlay);
+		for(index0 in 0...Std.int(_NumberofActorstoCreate))
+		{
+			createRecycledActor(getActorType(11), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
+			getLastCreatedActor().applyImpulseInDirection(randomInt(1, 360), _ExplosionForce);
+		}
+		for(index0 in 0...Std.int(_NumberofSecondActorstoCreate))
+		{
+			createRecycledActor(getActorType(13), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
+			getLastCreatedActor().applyImpulseInDirection(randomInt(1, 360), _ExplosionForceofSecondActors);
+		}
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Actor", "actor");
+		nameMap.set("Number of Actors to Create", "_NumberofActorstoCreate");
+		_NumberofActorstoCreate = 10.0;
+		nameMap.set("Explosion Force", "_ExplosionForce");
+		_ExplosionForce = 1.0;
+		nameMap.set("Actor to Create", "_ActortoCreate");
+		_ActortoCreate = getActorType(11);
+		nameMap.set("Number of Second Actors to Create", "_NumberofSecondActorstoCreate");
+		_NumberofSecondActorstoCreate = 5.0;
+		nameMap.set("Second Actor to Create", "_SecondActortoCreate");
+		_SecondActortoCreate = getActorType(13);
+		nameMap.set("Explosion Force of Second Actors", "_ExplosionForceofSecondActors");
+		_ExplosionForceofSecondActors = 0.7;
+		nameMap.set("Sound to Play", "_SoundtoPlay");
+		_SoundtoPlay = getSound(15);
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && 1 == mouseState)
-			{
-				actor.growTo(130/100, 130/100, 0, Easing.linear);
-			}
-		});
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && -1 == mouseState)
-			{
-				actor.growTo(100/100, 100/100, 0, Easing.linear);
-			}
-		});
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && 3 == mouseState)
-			{
-				switchScene(GameModel.get().scenes.get(1).getID(), null, createSlideUpTransition(0.5));
-			}
-		});
 		
 	}
 	

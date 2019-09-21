@@ -30,28 +30,254 @@
         </event-key-press-release>
     </group>
     <group eventID="2" id="-1"/>
-    <group eventID="3" id="0">
-        <step comment="false" x="15" y="15">
-            <group eventID="3" id="-1">
-                <if comment="false" x="26" y="40">
-                    <group eventID="3" id="-1">
-                        <if comment="false" x="37" y="70">
-                            <group eventID="3" id="-1">
-                                <dolater comment="false" x="48" y="100">
-                                    <group eventID="3" id="-1">
-                                        <set-game-val-5 comment="false" x="59" y="127">
-                                            <true comment="false" id="0" x="0" y="0"/>
-                                        </set-game-val-5>
-                                        <create-actor3 comment="false" x="59" y="152">
-                                            <actortype eid="39" id="0"/>
-                                            <int id="1" val="250"/>
-                                            <int id="2" val="20"/>
-                                            <int id="3" val="0"/>
-                                        </create-actor3>
+    <group eventID="4" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <die comment="false" x="26" y="47">
+                    <first-actor comment="false" id="0" x="0" y="0"/>
+                </die>
+                <setanim comment="false" x="26" y="79">
+                    <second-actor comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Warning"/>
+                </setanim>
+                <dolater comment="false" x="26" y="111">
+                    <group eventID="4" id="-1">
+                        <setanim comment="false" x="37" y="138">
+                            <second-actor comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Animation 0"/>
+                        </setanim>
+                        <set-game-val-6 comment="false" x="37" y="170">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-game-val-6>
+                        <if comment="false" x="37" y="200">
+                            <group eventID="4" id="-1">
+                                <shout comment="false" x="48" y="230">
+                                    <second-actor comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="HandleDeath"/>
+                                </shout>
+                                <die comment="false" x="48" y="262">
+                                    <second-actor comment="false" id="0" x="0" y="0"/>
+                                </die>
+                                <dolater comment="false" x="48" y="294">
+                                    <group eventID="4" id="-1">
+                                        <scene-change-through comment="false" x="59" y="321">
+                                            <scene eid="3" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val="0"/>
+                                        </scene-change-through>
                                     </group>
                                     <int id="0" val="1"/>
                                     <ACTOR eid="lastcreated" id="2"/>
                                 </dolater>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <int id="0" val="1.1"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <actortype eid="37" id="0"/>
+            <actortype eid="39" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <die comment="false" x="26" y="47">
+                    <first-actor comment="false" id="0" x="0" y="0"/>
+                </die>
+                <setanim comment="false" x="26" y="79">
+                    <second-actor comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Warning"/>
+                </setanim>
+                <dolater comment="false" x="26" y="111">
+                    <group eventID="4" id="-1">
+                        <setanim comment="false" x="37" y="138">
+                            <second-actor comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Animation 0"/>
+                        </setanim>
+                        <set-game-val-6 comment="false" x="37" y="170">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-game-val-6>
+                        <if comment="false" x="37" y="200">
+                            <group eventID="4" id="-1">
+                                <shout comment="false" x="48" y="230">
+                                    <second-actor comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="HandleDeath"/>
+                                </shout>
+                                <die comment="false" x="48" y="262">
+                                    <second-actor comment="false" id="0" x="0" y="0"/>
+                                </die>
+                                <dolater comment="false" x="48" y="294">
+                                    <group eventID="4" id="-1">
+                                        <scene-change-through comment="false" x="59" y="321">
+                                            <scene eid="3" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val="0"/>
+                                        </scene-change-through>
+                                    </group>
+                                    <int id="0" val="1"/>
+                                    <ACTOR eid="lastcreated" id="2"/>
+                                </dolater>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <int id="0" val="1.1"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <actortype eid="35" id="0"/>
+            <actortype eid="39" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <die comment="false" x="26" y="47">
+                    <first-actor comment="false" id="0" x="0" y="0"/>
+                </die>
+                <setanim comment="false" x="26" y="79">
+                    <second-actor comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Warning"/>
+                </setanim>
+                <dolater comment="false" x="26" y="111">
+                    <group eventID="4" id="-1">
+                        <setanim comment="false" x="37" y="138">
+                            <second-actor comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Animation 0"/>
+                        </setanim>
+                        <set-game-val-6 comment="false" x="37" y="170">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-game-val-6>
+                        <if comment="false" x="37" y="200">
+                            <group eventID="4" id="-1">
+                                <shout comment="false" x="48" y="230">
+                                    <second-actor comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="HandleDeath"/>
+                                </shout>
+                                <die comment="false" x="48" y="262">
+                                    <second-actor comment="false" id="0" x="0" y="0"/>
+                                </die>
+                                <dolater comment="false" x="48" y="294">
+                                    <group eventID="4" id="-1">
+                                        <scene-change-through comment="false" x="59" y="321">
+                                            <scene eid="3" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val="0"/>
+                                        </scene-change-through>
+                                    </group>
+                                    <int id="0" val="1"/>
+                                    <ACTOR eid="lastcreated" id="2"/>
+                                </dolater>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <int id="0" val="1.1"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <actortype eid="9" id="0"/>
+            <actortype eid="39" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <die comment="false" x="26" y="47">
+                    <first-actor comment="false" id="0" x="0" y="0"/>
+                </die>
+                <setanim comment="false" x="26" y="79">
+                    <second-actor comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Warning"/>
+                </setanim>
+                <dolater comment="false" x="26" y="111">
+                    <group eventID="4" id="-1">
+                        <setanim comment="false" x="37" y="138">
+                            <second-actor comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Animation 0"/>
+                        </setanim>
+                        <set-game-val-6 comment="false" x="37" y="170">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-game-val-6>
+                        <if comment="false" x="37" y="200">
+                            <group eventID="4" id="-1">
+                                <shout comment="false" x="48" y="230">
+                                    <second-actor comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="HandleDeath"/>
+                                </shout>
+                                <die comment="false" x="48" y="262">
+                                    <second-actor comment="false" id="0" x="0" y="0"/>
+                                </die>
+                                <dolater comment="false" x="48" y="294">
+                                    <group eventID="4" id="-1">
+                                        <scene-change-through comment="false" x="59" y="321">
+                                            <scene eid="3" id="0"/>
+                                            <int id="1" val="2"/>
+                                            <int id="2" val="0"/>
+                                        </scene-change-through>
+                                    </group>
+                                    <int id="0" val="1"/>
+                                    <ACTOR eid="lastcreated" id="2"/>
+                                </dolater>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <int id="0" val="1.1"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <actortype eid="33" id="0"/>
+            <actortype eid="39" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="8" id="-1">
+                        <if comment="false" x="37" y="70">
+                            <group eventID="8" id="-1">
+                                <create-actor3 comment="false" x="48" y="100">
+                                    <actortype eid="39" id="0"/>
+                                    <int id="1" val="250"/>
+                                    <int id="2" val="20"/>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <set-game-val-5 comment="false" x="48" y="127">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-5>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
                                 <get-game-val-5 comment="false" id="0" x="0" y="0"/>
@@ -67,5 +293,22 @@
             </group>
         </step>
     </group>
-    <group eventID="3" id="-1"/>
+    <group eventID="8" id="7">
+        <dolater comment="false" x="59" y="376">
+            <group eventID="8" id="-1"/>
+            <int id="0" val="1"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </dolater>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <set-game-val-4 comment="false" x="26" y="40">
+                    <int id="0" val="26"/>
+                </set-game-val-4>
+            </group>
+        </init>
+    </group>
+    <group eventID="9" id="-1"/>
 </groups>

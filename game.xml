@@ -88,6 +88,7 @@
         <number cid="-1" id="6" name="BossHP" save="true" value="20.0"/>
         <number cid="-1" id="4" name="EnemyCount" save="true" value="26.0"/>
         <boolean cid="-1" id="5" name="DidBossSpawn" save="true" value="false"/>
+        <number cid="-1" id="7" name="PierceFire" save="true" value="5.0"/>
         <boolean cid="-1" id="0" name="Move Right" save="true" value="true"/>
     </attributes>
     <collisions>

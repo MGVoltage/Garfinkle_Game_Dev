@@ -37,7 +37,7 @@
             <group eventID="3" id="-1">
                 <scene-change-through comment="false" x="26" y="42">
                     <scene eid="1" id="0"/>
-                    <int id="1" val="2"/>
+                    <int id="1" val="1"/>
                     <int id="2" val="0.5"/>
                 </scene-change-through>
             </group>

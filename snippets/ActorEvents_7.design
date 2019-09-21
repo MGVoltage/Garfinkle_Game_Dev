@@ -1,2 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <die comment="false" x="37" y="78">
+                            <ACTOR eid="this" id="0"/>
+                        </die>
+                        <set-game-val-4 comment="false" x="37" y="105">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-game-val-4>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <isonscreen comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </isonscreen>
+                    </not>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

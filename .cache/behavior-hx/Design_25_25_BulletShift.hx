@@ -61,43 +61,35 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_25 extends ActorScript
+class Design_25_25_BulletShift extends ActorScript
 {
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Actor", "actor");
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		/* =========================== Keyboard =========================== */
+		addKeyStateListener("up", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && 1 == mouseState)
+			if(wrapper.enabled && pressed)
 			{
-				actor.growTo(130/100, 130/100, 0, Easing.linear);
+				Engine.engine.setGameAttribute("BulletNo", ((Engine.engine.getGameAttribute("BulletNo") : Float) + 1));
 			}
 		});
 		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		/* =========================== Keyboard =========================== */
+		addKeyStateListener("down", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && -1 == mouseState)
+			if(wrapper.enabled && pressed)
 			{
-				actor.growTo(100/100, 100/100, 0, Easing.linear);
-			}
-		});
-		
-		/* =========================== On Actor =========================== */
-		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && 3 == mouseState)
-			{
-				switchScene(GameModel.get().scenes.get(1).getID(), null, createSlideUpTransition(0.5));
+				Engine.engine.setGameAttribute("BulletNo", ((Engine.engine.getGameAttribute("BulletNo") : Float) - 1));
 			}
 		});
 		
