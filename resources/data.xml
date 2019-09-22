@@ -114,6 +114,9 @@
         <anim across="1" down="1" durations="200" height="175" id="2" loop="false" name="Attack" numframes="1" originx="112" originy="87" sync="false" version="2" width="225">
             <poly data="4,29,2,189,2,189,112,29,112" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
         </anim>
+        <anim across="2" down="1" durations="200,200" height="175" id="3" loop="true" name="Take Damage" numframes="2" originx="112" originy="87" sync="false" version="2" width="450">
+            <poly data="4,0,0,225,0,225,175,0,175" density="0.1" fric="0.2" gid="-1000" id="0" name="Take Damage" rest="0.0" sensor="false"/>
+        </anim>
     </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="18" name="Desert Background" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
@@ -145,6 +148,7 @@
             <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="45" loop="true" name="Large sound" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="21" name="Orbit BG" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="29" fixedrot="false" fric="0.2" gid="3" id="41" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Orbital Assault" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="42" static="false">
         <snippets/>
@@ -201,6 +205,7 @@
             <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="44" loop="true" name="Pierce sound" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="13" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
         <snippets>
             <s enabled="true" id="2">
@@ -240,7 +245,7 @@
                 <prop id="7" list="0" val="left"/>
                 <prop id="8" list="0" val="right"/>
                 <prop id="9" list="0" val="3"/>
-                <prop id="11" list="0" val="10"/>
+                <prop id="11" list="0" val="15"/>
                 <prop id="12" list="0" val="0"/>
             </s>
             <s enabled="true" id="10">
@@ -288,6 +293,7 @@
             <poly data="4,0,0,14,0,14,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="43" loop="true" name="Shot sound" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="23" fixedrot="false" fric="0.2" gid="5" id="35" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Small shot" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="36" static="false">
         <snippets>
             <s enabled="false" id="7">
@@ -315,6 +321,7 @@
             <poly data="4,4,3,12,3,12,17,4,17" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="46" loop="true" name="Small sound" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="25" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Start Button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="26" static="false">
         <snippets/>
     </actor>

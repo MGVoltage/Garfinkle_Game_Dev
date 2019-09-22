@@ -226,7 +226,7 @@
                                 </get-xy>
                                 <plus comment="false" id="1" x="0" y="0">
                                     <get-game-val-8 comment="false" id="0" x="0" y="0"/>
-                                    <int id="1" val="44"/>
+                                    <int id="1" val="60"/>
                                 </plus>
                             </lesseq>
                             <moreeq comment="false" id="1" x="0" y="0">
@@ -236,7 +236,7 @@
                                 </get-xy>
                                 <minus comment="false" id="1" x="0" y="0">
                                     <get-game-val-8 comment="false" id="0" x="0" y="0"/>
-                                    <int id="1" val="44"/>
+                                    <int id="1" val="60"/>
                                 </minus>
                             </moreeq>
                         </and>
